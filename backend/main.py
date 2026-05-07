@@ -9,6 +9,3 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
-# user = input()
-# reviews = str(input())
-
