@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 app = FastAPI()
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+
+@app.get("https://api.api-ninjas.com/v1/university")
+def school_information():
+    return {"name: "}
