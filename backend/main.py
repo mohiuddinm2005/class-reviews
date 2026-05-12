@@ -6,6 +6,6 @@ app = FastAPI()
 
 
 
-@app.get("https://api.api-ninjas.com/v1/university")
+@app.get()
 def school_information():
     return {"name: "}
