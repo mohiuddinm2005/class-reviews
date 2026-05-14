@@ -6,6 +6,13 @@ app = FastAPI()
 
 
 
-@app.get()
-def school_information():
-    return {"name: "}
+@app.get("/school-information")
+def school_information(location: str):
+    if location != "Upenn":
+        return {"error": "Please enter school name"}
+    return {
+          "name": "Upenn",
+          "address": "3451 Walnut Street, Philadelphia, PA 19104",
+    }
+   
+  
